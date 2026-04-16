@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>個人網頁設計 - 你的姓名 (靜宜資管)</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <style>
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Microsoft JhengHei", sans-serif
+        }
+
+        body {
+            background-color: #f4f7f9
+            color: #333
+            line-height: 1.8
+            padding-bottom: 50px
+        }
+
+        header {
+            background-color: #1a2a4c
+            padding: 1.2rem 10%
+            position: sticky
+            top: 0
+            z-index: 1000
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2)
+        }
+
+        nav {
+            display: flex
+            justify-content: space-between
+            align-items: center
+        }
+
+        .logo {
+            color: white
+            font-size: 1.3rem
+            font-weight: bold
+            text-decoration: none
+        }
+
+        .nav-links {
+            list-style: none
+            display: flex
+        }
+
+        .nav-links li {
+            margin-left: 25px
+        }
+
+        .nav-links a {
+            text-decoration: none
+            color: #d1d1d1
+            transition: 0.3s
+            font-size: 1rem
+        }
+
+        .nav-links a:hover {
+            color: white
+        }
+        
+        .main-container {
+            max-width: 900px
+            margin: 0 auto
+            padding: 20px
+        }
+
+        .section {
+            background: white
+            padding: 40px
+            margin-top: 30px
+            border-radius: 12px
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05)
+        }
+
+        .section h2 {
+            color: #1a2a4c
+            border-bottom: 2px solid #1a2a4c
+            padding-bottom: 10px
+            margin-bottom: 25px
+            font-size: 1.8rem
+        }
+
+        .about-content {
+            display: flex
+            align-items: center
+            gap: 30px
+        }
+
+        .avatar-placeholder {
+            width: 150px
+            height: 150px
+            border-radius: 50%
+            background-color: #ddd
+            display: flex
+            justify-content: center
+            align-items: center
+            font-size: 3rem
+            color: #888
+        }
+
+        .about-text p {
+            margin-bottom: 15px
+        }
+
+        .highlight {
+            font-weight: bold
+            color: #1a2a4c
+            background-color: #e6f0ff
+            padding: 2px 6px
+            border-radius: 4px
+        }
+
+        .skills-list {
+            list-style: none
+            display: grid
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr))
+            gap: 20px
+        }
+
+        .skill-item {
+            background-color: #f8f9fa
+            padding: 15px
+            border-radius: 8px
+            display: flex
+            align-items: center
+            gap: 15px
+        }
+
+        .skill-item i {
+            font-size: 1.5rem
+            color: #1a2a4c
+        }
+
+        @media (max-width: 768px) {
+            header { padding: 1.2rem 5%; }
+            .nav-links { display: none; } 
+            .main-container { padding: 15px; }
+            .section { padding: 25px; }
+            .about-content { flex-direction: column; text-align: center; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#" class="logo">呂恩妮 CV</a>
+            <ul class="nav-links">
+                <li><a href="#about">關於我</a></li>
+                <li><a href="#skills">技術技能</a></li>
+                <li><a href="#contact">聯絡方式</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="main-container">
+
+        <section id="about" class="section">
+            <h2><i class="fa-solid fa-user"></i> 關於我</h2>
+            <div class="about-content">
+                <div class="avatar-placeholder">
+                    <i class="fa-solid fa-user-tie"></i>
+                </div>
+                <div class="about-text">
+                    <p>你好，我是！</p>
+                    <p>你好，我是呂恩妮！
+就讀於靜宜大學行銷與數位管理學系，我目前正在修讀資訊管理相關課並程使用 Sublime Text 作為開發工具，學習如何控制每一行代碼，建構屬於自己的數位空間 ，享受這種從無到有的創造過程，也期待能將這份跨領域的技能應用在未來的專業挑戰中，從零開始深入學習網頁設計技術。</p>
+                    <p>我追求的不僅僅是網頁的視覺美觀，更希望能掌握程式碼底層的邏輯，打造出既符合使用者體驗又能傳遞核心價值的數位平台。</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="section">
+            <h2><i class="fa-solid fa-code"></i> 技術技能</h2>
+            <ul class="skills-list">
+                <li class="skill-item">
+                    <i class="fa-solid fa-file-code"></i>
+                    <div>
+                        <strong>開發工具</strong><br>
+                        <span class="highlight">Sublime Text 4</span> (熟悉代碼編寫)
+                    </div>
+                </li>
+                <li class="skill-item">
+                    <i class="fa-brands fa-html5"></i>
+                    <div>
+                        <strong>前端技術</strong><br>
+                        HTML5 / CSS3 (自學中)
+                    </div>
+                </li>
+                <li class="skill-item">
+                    <i class="fa-solid fa-chart-line"></i>
+                    <div>
+                        <strong>專業領域</strong><br>
+                        數位行銷 / 行銷管理
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <section id="contact" class="section">
+            <h2><i class="fa-solid fa-envelope"></i> 聯絡方式</h2>
+            <p>Email: <a href="mailto:your-email@example.com">enni20170711@gmail.com</a> (歡迎聯繫)</p>
+        </section>
+
+    </div>
+
+</body>
+</html>
